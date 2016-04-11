@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+
+    body{ position: relative; background-image: url(back.png); overflow:hidden;        } 
+        .left{width:200px;  overflow-y:auto; height: 400px;  color: white; display: block;
+            line-height: 45px;
+        }
+        .right{ width: 300px; height: 300px;  }
+
+        .open{color: #4CAF50;
+
+        }
+        .right{ width: 400px;
+            align-content: right;
+        }
+      .a{ color: white;  }
+      .a{ color: white;  }
+      .a{ color: white;  }
+
+
+         button{ width:150px; height:40px; border-radius: 4px; color:white; background-color:transparent; }
+  
+  button:hover{ width:190px; color:white; background-color:#2AC4FC;  border-radius: 4px; font-size: 110%; border: hidden;}
+    
+ button:active{ width:190px; color:white; background-color:transparent;   font-size: 110%; transform:translateY(4px); transition-delay: 0.4s;}
+ 
+
+ #L{color: white; border: 1px solid white; font-size: 120%; font-weight: 120%; 
+  background-color:#181818; }
+   #L:hover{color: white;  font-size: 120%; font-weight: 120%; 
+  background-color:#2AC4FC; }
+
+#n1:hover{ 
+background-color:#2AC4FC;
+ }
+#n2:hover{ 
+background-color:#2AC4FC;
+ }
+#n3:hover{ 
+background-color:#2AC4FC;
+ }
+#n4:hover{ 
+background-color:#2AC4FC;
+ }
+#n5:hover{ 
+background-color:#2AC4FC;
+ }
+#n6:hover{ 
+background-color:#2AC4FC;
+ }
+
+
+    </style>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="bootstrap.css" >
+
+    <title>CyberSpace</title>
+    </head>
+    <body id="t1"
+   style="overflow-y:scroll;"       >
+    <div class="container-fluid" style="color:white; background-color:#181818">
+        <div class="col-sm-4" ><img  src="logo.png" attr="logo" height="48" width="270" style="padding-top: 10px;" ></div>
+    <div class="col-sm-8"></div>
+        </div>
+ 
+    
+       
+        <div class="container-fluid">
+        <div class="row" style="background-color:#181818;" >
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2" id="n1"    style="height:50px; text-align:center; margin:auto; padding-top:15px; color:white;  color: inherit;"><a href="main1.html">HOME</a></div>
+            
+            <div class="col-sm-2" href=".com/events" id="n2" style="height:50px; text-align:center; margin:auto; padding-top:15px; color:white;" ><a href="login.html">CHATROOM</a></div>
+            
+            <div class="col-sm-2" href=".com/qa"  id="n3" style="height:50px; text-align:center; margin:auto; padding-top:15px; color:white;"><a href="login.html">Q/A</a></div>
+            
+               <div class="col-sm-2" href=".com/chat" id="n4" style=" height:50px; text-align:center; margin:auto; padding-top:15px; color:white;  "><a href="login.html">ACCOUNT</a></div>
+            
+               
+                     
+            </div>
+            
+        </div>
+
+
+
+
+   <div class="container-fluid">
+   <div class="row"  >
+    <div class="col-sm-6">
+<br><t align="left"  style=" padding-left:150px ; font-style:strong ; font-size: 200%; color:white; ">LOG IN </t>
+
+<div align="left" style="padding-left:150px ; ">
+   <form role="form" action="<?php echo $script_name; ?>" method="POST">
+    <div class="form-group">
+     
+      <input type="text" class="form-control" id="email" placeholder="USERNAME" style=" width:400px;height:40px;" >
+    </div>
+      
+
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="PASSWORD" style=" width:400px;height:40px;">
+        </form>
+		    <div class="checkbox">
+      <label><input type="checkbox"  ><t style="color: white;">Remember me</t></label>
+    </div>
+    <span style="padding-right:440px;"><button id="L" type="submit"  class="btn btn-default" style="font-size:130%; height:40px;width:150px;margin:auto;">Log In</button></span>
+        </div>
+</div>
+
+</form></div>
+<div class="col-sm-6" style="border-left: 5px solid #197BBB  ;">
+
+<h1 align="left" style=" padding-left:120px ;   font-style:strong ; font-size: 200%; color:white;">SIGN UP  </h1>
+
+<div align="left" style="padding-left:120px ;">
+ 
+  <form role="form" action="registration_form.php" method="POST">
+    <div class="form-group">
+     
+      <input type="text" name="username" class="form-control" placeholder="USERNAME" style=" width:400px;height:40px;" onkeyup="strlencheck_username(this.value)" ><span id="username"></span>
+    </div>
+    <div class="form-group">
+     
+      <input type="text" name="admission_number" class="form-control" placeholder="ADMISSION NUMBER" style=" width:400px;height:40px;" >
+    </div>
+    <div class="form-group">
+      
+      <input type="text" name="email" onkeyup="email_validation(this.value)" style=" width:400px;height:40px;" placeholder="E-MAIL" class="form-control" ><span id="email"></span>
+    </div>
+    <div class="form-group">
+      
+      <input type="password"  name="password" class="form-control" onkeyup="passwordsave(this.value)" placeholder="PASSWORD" style=" width:400px;height:40px;"><span id="passwordsave"></span>
+    </div>
+    <div class="form-group">
+      
+      <input type="password" onkeyup="matchOrNot(this.value)" name="password_again" class="form-control" placeholder="RE ENTER YOUR PASSWORD" style=" width:400px;height:40px;"><span id="txtHint"></span>
+    </div>
+    <div class="form-group">
+     
+      <input type="text" class="form-control" name="firstname" onkeyup="strlencheck_firstname(this.value)"  placeholder="FIRST NAME" style=" width:400px;height:40px;"><span id="firstname"></span>
+    </div>
+    <div class="form-group">
+     
+      <input type="text" class="form-control" name="lastname" onkeyup="strlencheck_lastname(this.value)"   placeholder="LAST NAME" style=" width:400px;height:40px;"><span id="lastname"></span>
+    </div>
+    <div class="form-group">
+     
+      <input type="number" class="form-control" name="phone_number" placeholder="PHONE NUMBER (OPTIONAL)" style=" width:400px;height:40px;">
+    </div>
+    <span style="padding-right:440px;"><input type="submit" class="btn btn-default" id="L" style="font-size:130%;height:40px;width:150px;margin:auto;" value="Register"></input></span>
+  </form>
+</div>
+</div>
+</div>
+
+        </body>
+   <br>
+
+   
+    
+    
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+
+    body{ position: relative; background-image: url(back.png); overflow:hidden;        } 
+        .left{width:200px;  overflow-y:auto; height: 500px;  color: white; display: block;
+            line-height: 45px;
+        }
+        .right{ width: 300px; height: 300px;  }
+
+        .open{color: #4CAF50;
+
+        }
+        .right{ width: 400px;
+            align-content: right;
+        }
+      .a{ color: white;  }
+      .a{ color: white;  }
+      .a{ color: white;  }
+
+      #B{
+        margin-top: 20px; height:55px; width: 400px; font-size: 26px;  font-face:'Verdana'; 
+      }
+
+#b1{width:160px; height: 35px; color:white; background-color:#2AC4FC;  border-radius: 4px; font-size: 110%; border: hidden;
+}
+#topusers{
+  background-color: transparent; color:#181818; width: 1000px; height: 250px; margin-left: 50px; margin-top: 20px;
+}
+#LL{
+  color:white; font-size: 160%;  margin-left: 370px; background-color: #181818; width: 500px; height: 40px;
+}
+#LL:hover{
+  color:white; font-size: 170%; background-color: #2AC4FC;  
+}
+#topusers:hover{ color: transform #271818;}
+
+         button{ width:120px; height:30px; border-radius: 4px; color:white; background-color:transparent; }
+  
+  button:hover{ width:120px; height:30px; color:white; background-color:#2AC4FC;  border-radius: 4px; font-size: 110%; border: hidden;}
+    
+ button:active{ width:190px; color:white; background-color:transparent;   font-size: 110%; transform:translateY(4px); transition-delay: 0.4s;}
+#n1:hover{ 
+background-color:#2AC4FC;
+ }
+#n2:hover{ 
+background-color:#2AC4FC;
+ }
+#n3:hover{ 
+background-color:#2AC4FC;
+ }
+#n4:hover{ 
+background-color:#2AC4FC;
+ }
+#n5:hover{ 
+background-color:#2AC4FC;
+ }
+#n6:hover{ 
+background-color:#2AC4FC;
+ }
+
+
+    </style>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="bootstrap.css" >
+
+    <title>CyberSpace</title>
+    </head>
+    <body id="t1" style="overflow-y:scroll;" >
+    <div class="container-fluid" style="color:white; background-color:#181818; height:60px;">
+        <div class="col-sm-4" ><img  src="logo.png" attr="logo" height="48" width="270" style="padding-top: 10px;" ></div>
+    <div class="col-sm-5"></div>
+    <div class="col-sm-1"><b style=" padding-top:4px; float: right; padding-left: 50px; text-shadow:20px; ">Welcome! Rishabh</b></div>
+
+        
+        <img src="PORTRAIT.jpg" alt="Hi ! Rishabh" height="55" width="60"> 
+        <button type="button" style="padding-top:5px; padding-bottom: 5px;" onclick="window.location.href='./logout.html'">LOGOUT</button></div>
+    </div>
+ 
+    
+       
+        <div class="container-fluid">
+        <div class="row" style="background-color:#181818; " >
+        <div class="col-sm-4"></div>
+        <div onclick="window.location.href='./main.html'" class="col-sm-2" id="n1"    style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;  ">HOME</div>
+            
+            <div onclick="window.location.href='./chat.html'" class="col-sm-2" href=".com/events" id="n2" style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;">CHATROOM</div>
+            
+            <div onclick="window.location.href='./qa.html'" class="col-sm-2" href=".com/qa"  id="n3" style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;">Q/A</div>
+            
+               <div onclick="window.location.href='./account.html'" class="col-sm-2" href=".com/chat" id="n4" style=" height:45px; text-align:center; margin:auto; padding-top:15px; color:white;  ">ACCOUNT</div>
+            
+               
+                     
+            </div>
+            
+        </div>
+
+   <div class="row">
+<div class="col-lg-2">
+<div class="left" style="overflow: hidden; height: 300px;" >
+    <ul>
+        <tt ><a style="color: silver; font-size:140%; "><b>Trending</b></a></tt>
+        <li ><a style="color: white;">ISM2IIT</a></li>
+        <li ><a style="color: white;">CounterStrike</a></li>
+        <li ><a style="color: white;">End-SEM</a></li>
+ <li ><a style="color: white;">Convocation</a></li>
+         <li ><a style="color: white;">ACM</a></li>
+        </ul>  
+    </div></div>
+
+<div class="col-lg-4" id="topusers" style="border: 2px solid white; ">
+<div style="font-size: 190%; text-align: center; object-position: center; background-color:#2AC4FC; color:white; border-radius: 2px;">
+<h2 ><b>Top Cyborgs</b></h2></div>
+
+<i id="LL"><b>1> Dexter Linus</b></i></br>
+<i id="LL"><b>2> Manish Connors</b></i></br>
+<i id="LL"><b>3> Rishabh Bharti</b></i></br>
+<i id="LL"><b>4> Cyborg Paji</b></i></br>
+<i id="LL"><b>5> Nakul tetron</b></i></br>
+</div></div>
+
+<div  id="topsites" style="background-color: transparent; object-position: center; solid white; width:1000px; height:450px; margin-left: 264px; margin-top: 10px; border: 2px solid white; ">
+<div style=" color:white ; background-color:#2AC4FC;  text-align: center; width:950px; height:40px; border-radius: 2px; margin-left: 23px; "><h2 style="font-face: 'Comic Sans MS';"><b>TOP CODING SITES</b></h2>
+<button onclick="window.location.href='http://www.hackerrank.com'" id="B" type="button">HackerRank</button></br>
+<button onclick="window.location.href='https://www.codechef.com/'" id="B" type="button">CodeChef</button></br>
+<button  onclick="window.location.href='https://www.topcoder.com/'" id="B" type="button">TopCoder</button></br>
+<button onclick="window.location.href='http://www.spoj.com/'" id="B" type="button">SPOJ</button></br>
+<button onclick="window.location.href='http://codeforces.com/'" id="B" type="button">CodeForces</button></br>
+
+   
+</div></div>
+
+        </body>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+
+   
+    
+    
+</html>
