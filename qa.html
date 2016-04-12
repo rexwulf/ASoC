@@ -53,6 +53,15 @@ background-color:#2AC4FC;
 background-color:#2AC4FC;
  }
 
+#ques{border:2px solid white;border-radius:2px; 
+color: white;
+
+}
+#ques:hover{
+  background-color:#2AC4FC; 
+  border: hidden; 
+  color:black;
+}
 
    
     </style>
@@ -80,16 +89,16 @@ background-color:#2AC4FC;
  
     
        
-        <div class="container-fluid">
-        <div class="row" style="background-color:#181818;" >
+     <div class="container-fluid">
+        <div class="row" style="background-color:#181818; " >
         <div class="col-sm-4"></div>
-        <div class="col-sm-2" id="n1"    style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;  color: inherit;"><a href="main.html">HOME</a></div>
+        <div onclick="window.location.href='./main.html'" class="col-sm-2" id="n1"    style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;  ">HOME</div>
             
-            <div class="col-sm-2" href=".com/events" id="n2" style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;"><a href="chat.html">CHATROOM</a></div>
+            <div onclick="window.location.href='./chat.html'" class="col-sm-2" href=".com/events" id="n2" style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;">CHATROOM</div>
             
-            <div class="col-sm-2" href=".com/qa"  id="n3" style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;"><a href="qa.html">Q/A</a></div>
+            <div onclick="window.location.href='./qa.html'" class="col-sm-2" href=".com/qa"  id="n3" style="height:45px; text-align:center; margin:auto; padding-top:15px; color:white;">Q/A</div>
             
-               <div class="col-sm-2" href=".com/chat" id="n4" style=" height:45px; text-align:center; margin:auto; padding-top:15px; color:white;  "><a href="account.html">ACCOUNT</a></div>
+               <div onclick="window.location.href='./account.html'" class="col-sm-2" href=".com/chat" id="n4" style=" height:45px; text-align:center; margin:auto; padding-top:15px; color:white;  ">ACCOUNT</div>
             
                
                      
@@ -126,7 +135,8 @@ background-color:#2AC4FC;
 
     <div class="col-sm-4" style=" font-size:150%; background-color:   #2AC4FC; color:white;  height:50px;width:1000px;margin-top:25px;FONT-SIZE:25PX;TEXT-ALIGN:CENTER;padding-top:10px; float:left; ">Recently Asked <br><br>
 <div class="container" style="background-color: #181818;">
-       <div class="col-sm-4" style=" font-size:70%; background-color:  transparent;  border:2px solid white;border-radius:2px; font-size:17px; color: white;height:75px;width:1000px;margin-top:25px;margin-left:0px;overflow-y:scroll;">03/03/16    09:00am </br> <b style="font-size: 150%;">What is a Cyborg?     </b>     </div>
+      
+       <div id="ques" onclick="window.location.href='./qa1.html'" class="col-sm-4" style=" font-size:70%;   font-size:17px; height:75px;width:1000px;margin-top:25px;margin-left:0px;overflow-y:scroll;">03/03/16    09:00am </br> <b style="font-size: 150%;">What is a Cyborg?     </b>     </div>
        <div class="media-force-load" data-action="force-load" href="#"></div>
 
 <!-- ANSWER -->
@@ -149,7 +159,7 @@ background-color:#2AC4FC;
 
 
 <div class="container" style="background-color: #181818; margin-top: 40px;">
-        <div class="col-sm-4" style=" font-size:150%; background-color: transparent; font-size:17px; border:2px solid white;border-radius:2px;color: white;height:75px;width:1000px;margin-top:25px;margin-left:0px;overflow-y:scroll; "> 04/03/16         10:00pm    </br> <b style="font-size: 150%;">How to dual boot ubuntu with windows 10?     </b>    </div>
+        <div id="ques" class="col-sm-4" style=" font-size:150%;  font-size:17px; height:75px;width:1000px;margin-top:25px;margin-left:0px;overflow-y:scroll; "> 04/03/16         10:00pm    </br> <b style="font-size: 150%;">How to dual boot ubuntu with windows 10?     </b>    </div>
               <div class="media-force-load" data-action="force-load" href="#"></div>
 <div class="col-sm-2" style="padding-top: 15px; margin-right: 50px;">Answers:</div>
  <div class="col-sm-4" style=" background-color: #181818; font-size:70%; text-shadow: 1px;    border:3px solid black;border-radius:2px; font-size:17px; color:  #2AC4FC;height:55px; width:800px;margin-left:200px; overflow-y:scroll; ">04.04.16    09:00am </br> <b style="font-size: 120%">Abhinav: run ubuntu-setup.exe from live-cd then check dual-boot in boot options. For video tutorial goto<a href="youtube.com/watch=advaci?">: youtube.com/watch=advaci?</a> </b>        </div>
@@ -161,7 +171,7 @@ background-color:#2AC4FC;
 <div class="col-sm-4" style="height:40px;"></div>
 
 <div class="container" style="background-color: #181818; margin-top: 40px;">
-                 <div class="col-sm-4" style=" font-size:150%; background-color:  #4CAF50; font-size:17px; background-color:transparent; border:2px solid white;border-radius:2px; color: white;height:75px;width:1000px;margin-top:25px;margin-left:0px;overflow-y:scroll;"> 05/03/16         09:00pm   </br> <b style="font-size: 150%;">How to get full marks in End-sem exam :p ?     </b>    </div>
+                 <div id="ques" class="col-sm-4" style=" font-size:150%;  font-size:17px;height:75px;width:1000px;margin-top:25px;margin-left:0px;overflow-y:scroll;"> 05/03/16         09:00pm   </br> <b style="font-size: 150%;">How to get full marks in End-sem exam :p ?     </b>    </div>
          
            <div class="col-sm-4" style="margin-top: 15px; margin-left:155px; "><input type="text" class="form-control" id="question" placeholder="know the answer?" style="background-color: transparent; color: white; font-size: 110%; width:750px;height:50px;  border:2px solid white;" ></div>
 <div class="col-sm-5" style="  margin-top: 14px; margin-left: 50px;"><button id="b4" type="submit"  class="btn btn-default" style="  float:right; height:45px;width:120px; color:white;  font-size:105%; padding-bottom: 4px;"><b >submit</b></button>
